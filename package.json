@@ -1,0 +1,42 @@
+{
+  "name": "wasm-dwarf-debugging",
+  "publisher": "ms-vscode",
+  "version": "1.0.0",
+  "description": "Enables enhanced WebAssembly debugging",
+  "main": "index.js",
+  "displayName": "WebAssembly DWARF Debugging",
+  "activationEvents": [],
+  "scripts": {
+    "vscode:prepublish": "node build",
+    "pack": "npx vsce package --no-dependencies",
+    "build": "node build"
+  },
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Debuggers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/vscode-dwarf-debugging-ext.git"
+  },
+  "keywords": [
+    "dwarf",
+    "webassembly",
+    "wasm",
+    "debug"
+  ],
+  "author": "Connor Peet <connor@peet.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/vscode-dwarf-debugging-ext/issues"
+  },
+  "homepage": "https://github.com/microsoft/vscode-dwarf-debugging-ext#readme",
+  "dependencies": {
+    "@vscode/dwarf-debugging": "^0.0.2"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.21.0"
+  }
+}

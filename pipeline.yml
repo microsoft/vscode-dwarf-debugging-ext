@@ -1,0 +1,29 @@
+trigger:
+  branches:
+    include:
+      - main
+pr: none
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: microsoft/vscode-engineering
+      endpoint: Monaco
+
+parameters:
+  - name: publishExtension
+    displayName: 🚀 Publish Extension
+    type: boolean
+    default: false
+
+extends:
+  template: azure-pipelines/extension/stable.yml@templates
+  parameters:
+    vscePackageArgs: --no-dependencies
+    l10nShouldProcess: false
+    ghCreateTag: false
+    publishExtension: ${{ parameters.publishExtension }}
+    buildSteps:
+      - script: npm ci
+        displayName: Install dependencies
