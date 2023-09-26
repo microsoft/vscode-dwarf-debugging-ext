@@ -1,7 +1,8 @@
 {
   "name": "wasm-dwarf-debugging",
   "publisher": "ms-vscode",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "icon": "./icon.png",
   "description": "Enables enhanced WebAssembly debugging",
   "main": "index.js",
   "displayName": "WebAssembly DWARF Debugging",
