@@ -38,6 +38,6 @@
     "@vscode/dwarf-debugging": "^0.0.2"
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.21.0"
+    "@vscode/vsce": "^3.9.2"
   }
 }
